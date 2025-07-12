@@ -1,0 +1,10 @@
+github.com/df-mc/dragonfly v0.10.5 h1:vn3Mwh7vWPDtIdss4QEOP8vSZGHRAjyLvrOEM5mEUI0=
+github.com/df-mc/dragonfly v0.10.5/go.mod h1:/KjoqvIe5+ZxuFUPSRey9UzQS3GkTgAyTH0jTYFMs/g=
+github.com/gorcon/rcon v1.4.0 h1:pYwZ8Rhcgfh/LhdPBncecuEo5thoFvPIuMSWovz1FME=
+github.com/gorcon/rcon v1.4.0/go.mod h1:M6v6sNmr/NET9YIf+2rq+cIjTBridoy62uzQ58WgC1I=
+github.com/k4ties/gq v0.0.0-20250704102004-0f3b4a86b4f4 h1:QgI5Xl+G1f5VeY2lUAzqxaC8twmHGM1E+c+NltuAQ7c=
+github.com/k4ties/gq v0.0.0-20250704102004-0f3b4a86b4f4/go.mod h1:QFucSPXZ4Xmm8wveWzhtXdylfXLrG+Y7PoZR3yvTyeQ=
+github.com/petermattis/goid v0.0.0-20240813172612-4fcff4a6cae7 h1:Dx7Ovyv/SFnMFw3fD4oEoeorXc6saIiQ23LrGLth0Gw=
+github.com/petermattis/goid v0.0.0-20240813172612-4fcff4a6cae7/go.mod h1:pxMtw7cyUw6B2bRH0ZBANSPg+AoSud1I1iyJHI69jH4=
+github.com/sasha-s/go-deadlock v0.3.5 h1:tNCOEEDG6tBqrNDOX35j/7hL5FcFViG6awUGROb2NsU=
+github.com/sasha-s/go-deadlock v0.3.5/go.mod h1:bugP6EGbdGYObIlx7pUZtWqlvo8k9H6vCBBsiChJQ5U=
