@@ -133,7 +133,7 @@ func (server *Server) accept(ctx context.Context) {
 
 	server.wg.Add(1)
 	defer server.wg.Done()
-	defer server.listener.Close()
+	defer server.listener.Close() // nolint:errcheck
 
 	for {
 		select {
@@ -200,7 +200,8 @@ func (server *Server) handleConn(conn net.Conn, ctx context.Context) {
 		request := ctx.Val()
 		// Handling the packet
 		if err = server.handlePacket(request, rConn); err != nil {
-			if errors.Is(err, context.Canceled) {
+			if request.Packet.Type == PacketTypeAuth && errors.Is(err, context.Canceled) {
+				// Send failed authentication to the connection
 				rConn.failAuthentication()
 			}
 			server.logger.Debug("handle packet", "addr", conn.RemoteAddr(), "err", err)
