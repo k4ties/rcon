@@ -258,7 +258,9 @@ func (server *Server) Close() error {
 		// Clearing connections
 		server.connMu.Lock()
 		server.conn.Iterate(func(addr net.Addr, conn *Conn) bool {
-			_ = conn.Close()
+			if err := conn.Close(); err != nil {
+				server.logger.Debug("error when close connection", "err", err, "addr", addr)
+			}
 			server.conn.Delete(addr)
 			return true
 		})
