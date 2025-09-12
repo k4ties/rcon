@@ -110,7 +110,7 @@ func (server *Server) serve(ctx context.Context) {
 	server.wg.Add(1)
 	defer server.wg.Done()
 
-	go server.accept(ctx) // listener.Accept wouldn't block function
+	go server.accept(ctx) // listener.Accept wouldn't block function // TODO that is goroutine leak
 	for {
 		select {
 		case incoming, ok := <-server.incoming:
